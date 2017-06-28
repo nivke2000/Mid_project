@@ -1,3 +1,83 @@
 body {
     direction:rtl;
+    font-family: Arial;
  }
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header {
+    background-color: gray;
+    height: 100px;
+    margin: auto;  
+}
+
+
+li:last-child {
+    border-left: none;
+}
+
+header ul li {
+    display: inline;
+    border-left: 1px solid lightgray;
+}
+
+header ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.first-row {
+    margin: auto;
+    width: 1000px;
+    padding: 20px;
+}
+
+.top-block {
+    float: right;
+    width:33%;
+    position: relative;
+}
+
+.first-row-article {
+    position: absolute;
+    top: 0; 
+    left: 0;
+
+}
+
+    
+.first-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: gray;
+    height: 30px;
+    width: 100%;
+    margin: auto;
+    font-size: 14px;
+}
+
+footer ul li {
+    display: inline;
+    border-left: 1px solid lightgray;
+}
+
+footer ul li a {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
